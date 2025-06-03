@@ -1,20 +1,24 @@
 PODS:
+  - Alamofire (5.8.0)
   - R.swift (7.3.2)
   - SnapKit (5.6.0)
 
 DEPENDENCIES:
+  - Alamofire
   - R.swift
   - SnapKit
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - R.swift
     - SnapKit
 
 SPEC CHECKSUMS:
+  Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   R.swift: 0af0d882f49f03711415cb4e5215daa977d8a480
   SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
 
-PODFILE CHECKSUM: 5175410906ee6e6d0124bf91f61762be7662788f
+PODFILE CHECKSUM: 2738dbd63cfd6bd24d89d8cc9e434e3cef1ed654
 
 COCOAPODS: 1.15.2
