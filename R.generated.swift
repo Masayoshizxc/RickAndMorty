@@ -13,13 +13,21 @@ let R = _R(bundle: Bundle(for: BundleFinder.self))
 struct _R {
   let bundle: Foundation.Bundle
   var color: color { .init(bundle: bundle) }
+  var image: image { .init(bundle: bundle) }
   var info: info { .init(bundle: bundle) }
+  var file: file { .init(bundle: bundle) }
   var storyboard: storyboard { .init(bundle: bundle) }
 
   func color(bundle: Foundation.Bundle) -> color {
     .init(bundle: bundle)
   }
+  func image(bundle: Foundation.Bundle) -> image {
+    .init(bundle: bundle)
+  }
   func info(bundle: Foundation.Bundle) -> info {
+    .init(bundle: bundle)
+  }
+  func file(bundle: Foundation.Bundle) -> file {
     .init(bundle: bundle)
   }
   func storyboard(bundle: Foundation.Bundle) -> storyboard {
@@ -33,12 +41,32 @@ struct _R {
     let developmentRegion = "en"
   }
 
-  /// This `_R.color` struct is generated, and contains static references to 1 colors.
+  /// This `_R.color` struct is generated, and contains static references to 3 colors.
   struct color {
     let bundle: Foundation.Bundle
 
     /// Color `AccentColor`.
     var accentColor: RswiftResources.ColorResource { .init(name: "AccentColor", path: [], bundle: bundle) }
+
+    /// Color `Space`.
+    var space: RswiftResources.ColorResource { .init(name: "Space", path: [], bundle: bundle) }
+
+    /// Color `customGray`.
+    var customGray: RswiftResources.ColorResource { .init(name: "customGray", path: [], bundle: bundle) }
+  }
+
+  /// This `_R.image` struct is generated, and contains static references to 3 images.
+  struct image {
+    let bundle: Foundation.Bundle
+
+    /// Image `Back`.
+    var back: RswiftResources.ImageResource { .init(name: "Back", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Logo`.
+    var logo: RswiftResources.ImageResource { .init(name: "Logo", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
+
+    /// Image `Portal`.
+    var portal: RswiftResources.ImageResource { .init(name: "Portal", path: [], bundle: bundle, locale: nil, onDemandResourceTags: nil) }
   }
 
   /// This `_R.info` struct is generated, and contains static references to 1 properties.
@@ -89,6 +117,14 @@ struct _R {
     }
   }
 
+  /// This `_R.file` struct is generated, and contains static references to 1 resource files.
+  struct file {
+    let bundle: Foundation.Bundle
+
+    /// Resource file `GoogleService-Info.plist`.
+    var googleServiceInfoPlist: RswiftResources.FileResource { .init(name: "GoogleService-Info", pathExtension: "plist", bundle: bundle, locale: LocaleReference.none) }
+  }
+
   /// This `_R.storyboard` struct is generated, and contains static references to 1 storyboards.
   struct storyboard {
     let bundle: Foundation.Bundle
@@ -110,7 +146,10 @@ struct _R {
 
       let name = "LaunchScreen"
       func validate() throws {
-
+        if UIKit.UIImage(named: "Back", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Back' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Logo", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Logo' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
+        if UIKit.UIImage(named: "Portal", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Image named 'Portal' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
+        if UIKit.UIColor(named: "Space", in: bundle, compatibleWith: nil) == nil { throw RswiftResources.ValidationError("[R.swift] Color named 'Space' is used in storyboard 'LaunchScreen', but couldn't be loaded.") }
       }
     }
   }

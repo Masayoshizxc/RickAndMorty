@@ -35,4 +35,13 @@ extension UIView {
 }
 
 
+extension Optional where Wrapped == String {
+    var orNone: String {
+        if let self = self, !self.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            return self
+        } else {
+            return "None"
+        }
+    }
+}
 

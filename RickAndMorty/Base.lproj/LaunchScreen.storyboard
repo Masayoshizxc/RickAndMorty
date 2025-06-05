@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -12,11 +12,36 @@
         <scene sceneID="EHf-IW-A2E">
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                    <view key="view" contentMode="scaleToFill" id="YIv-Hh-s1p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Back" translatesAutoresizingMaskIntoConstraints="NO" id="PPB-YI-mp8">
+                                <rect key="frame" x="16" y="157" width="351" height="597"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-XJ-I4n">
+                                <rect key="frame" x="126.66666666666669" y="223" width="140" height="40"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Portal" translatesAutoresizingMaskIntoConstraints="NO" id="IA6-h5-gcR">
+                                <rect key="frame" x="126.66666666666669" y="299" width="140" height="228"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="jhl-tv-YdJ"/>
+                                    <constraint firstAttribute="height" constant="228" id="lQH-q3-UDL"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DBr-93-OLB"/>
+                        <color key="backgroundColor" name="Space"/>
+                        <constraints>
+                            <constraint firstItem="IA6-h5-gcR" firstAttribute="top" secondItem="zaJ-XJ-I4n" secondAttribute="bottom" constant="36" id="0CJ-uQ-SCq"/>
+                            <constraint firstItem="IA6-h5-gcR" firstAttribute="centerX" secondItem="YIv-Hh-s1p" secondAttribute="centerX" id="0GJ-Rc-VDA"/>
+                            <constraint firstItem="DBr-93-OLB" firstAttribute="bottom" secondItem="PPB-YI-mp8" secondAttribute="bottom" constant="64" id="2NV-bc-e9R"/>
+                            <constraint firstAttribute="trailing" secondItem="PPB-YI-mp8" secondAttribute="trailing" constant="26" id="77h-0e-ZJI"/>
+                            <constraint firstItem="zaJ-XJ-I4n" firstAttribute="top" secondItem="DBr-93-OLB" secondAttribute="top" constant="164" id="ERw-PD-sAB"/>
+                            <constraint firstItem="PPB-YI-mp8" firstAttribute="top" secondItem="DBr-93-OLB" secondAttribute="top" constant="98" id="GDb-Fh-BCU"/>
+                            <constraint firstItem="PPB-YI-mp8" firstAttribute="leading" secondItem="DBr-93-OLB" secondAttribute="leading" constant="16" id="GMb-CW-L34"/>
+                            <constraint firstItem="zaJ-XJ-I4n" firstAttribute="centerX" secondItem="YIv-Hh-s1p" secondAttribute="centerX" id="NzW-Cl-eqG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -25,8 +50,11 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="Back" width="334" height="650"/>
+        <image name="Logo" width="140" height="40"/>
+        <image name="Portal" width="140" height="228"/>
+        <namedColor name="Space">
+            <color red="0.019607843137254902" green="0.047058823529411764" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

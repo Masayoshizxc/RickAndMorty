@@ -18,12 +18,13 @@ class CharactersView: UIView {
         return l
     }()
     
-    lazy var collectionView: UICollectionView = {
+    lazy var characterCollectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        cv.register(CollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        cv.register(CollectionViewCell.self)
         cv.backgroundColor = .systemBackground
+//        cv.backgroundColor = .systemPurple
         cv.showsVerticalScrollIndicator = false
         return cv
     }()
@@ -47,7 +48,8 @@ class CharactersView: UIView {
 extension CharactersView {
     func setupSubviews() {
         addSubviews(
-            title
+            title,
+            characterCollectionView
         )
     }
     
@@ -55,6 +57,11 @@ extension CharactersView {
         title.snp.makeConstraints{ make in
             make.left.equalToSuperview().inset(24)
             make.top.equalToSuperview().inset(76.5)
+        }
+        characterCollectionView.snp.makeConstraints{ make in
+            make.top.equalTo(title.snp.bottom).offset(10)
+            make.left.right.equalToSuperview().inset(16)
+            make.bottom.equalToSuperview().inset(80)
         }
     }
 }

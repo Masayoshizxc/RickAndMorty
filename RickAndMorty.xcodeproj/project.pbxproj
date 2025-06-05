@@ -42,6 +42,18 @@
 		AE2AC2752DEF1E2600F7A19C /* FailureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2742DEF1E2600F7A19C /* FailureModel.swift */; };
 		AE2AC2772DEF222D00F7A19C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2762DEF222D00F7A19C /* CollectionViewCell.swift */; };
 		AE2AC2792DEF227700F7A19C /* Extension + CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2782DEF227700F7A19C /* Extension + CollectionView.swift */; };
+		AE2AC27B2DEF37A400F7A19C /* CharacterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC27A2DEF37A400F7A19C /* CharacterRouter.swift */; };
+		AE2AC2832DEF3A9E00F7A19C /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC27E2DEF3A9E00F7A19C /* Info.swift */; };
+		AE2AC2842DEF3A9E00F7A19C /* Characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC27F2DEF3A9E00F7A19C /* Characters.swift */; };
+		AE2AC2852DEF3A9E00F7A19C /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2802DEF3A9E00F7A19C /* Location.swift */; };
+		AE2AC2872DEF3A9E00F7A19C /* Origin.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2822DEF3A9E00F7A19C /* Origin.swift */; };
+		AE2AC2892DEF3D4C00F7A19C /* CharactersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2882DEF3D4C00F7A19C /* CharactersViewModel.swift */; };
+		AE2AC2932DF1DBCA00F7A19C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2922DF1DBCA00F7A19C /* HomeViewController.swift */; };
+		AE2AC2952DF1DF0000F7A19C /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2942DF1DF0000F7A19C /* HomeModel.swift */; };
+		AE2AC2972DF1E21D00F7A19C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AE2AC2962DF1E21D00F7A19C /* GoogleService-Info.plist */; };
+		AE2AC2992DF2022900F7A19C /* RemoteConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC2982DF2022800F7A19C /* RemoteConfigService.swift */; };
+		AE2AC29B2DF205F600F7A19C /* SpecialCharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC29A2DF205F600F7A19C /* SpecialCharacterView.swift */; };
+		AE2AC29D2DF2061200F7A19C /* SpecialCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AC29C2DF2061200F7A19C /* SpecialCharacterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -83,6 +95,18 @@
 		AE2AC2742DEF1E2600F7A19C /* FailureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureModel.swift; sourceTree = "<group>"; };
 		AE2AC2762DEF222D00F7A19C /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		AE2AC2782DEF227700F7A19C /* Extension + CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + CollectionView.swift"; sourceTree = "<group>"; };
+		AE2AC27A2DEF37A400F7A19C /* CharacterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRouter.swift; sourceTree = "<group>"; };
+		AE2AC27E2DEF3A9E00F7A19C /* Info.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Info.swift; path = ../../../../../../../../Downloads/codegen_683f022b7780c/Info.swift; sourceTree = "<group>"; };
+		AE2AC27F2DEF3A9E00F7A19C /* Characters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Characters.swift; path = ../../../../../../../../Downloads/codegen_683f022b7780c/Characters.swift; sourceTree = "<group>"; };
+		AE2AC2802DEF3A9E00F7A19C /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Location.swift; path = ../../../../../../../../Downloads/codegen_683f022b7780c/Location.swift; sourceTree = "<group>"; };
+		AE2AC2822DEF3A9E00F7A19C /* Origin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Origin.swift; path = ../../../../../../../../Downloads/codegen_683f022b7780c/Origin.swift; sourceTree = "<group>"; };
+		AE2AC2882DEF3D4C00F7A19C /* CharactersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewModel.swift; sourceTree = "<group>"; };
+		AE2AC2922DF1DBCA00F7A19C /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AE2AC2942DF1DF0000F7A19C /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		AE2AC2962DF1E21D00F7A19C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AE2AC2982DF2022800F7A19C /* RemoteConfigService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteConfigService.swift; sourceTree = "<group>"; };
+		AE2AC29A2DF205F600F7A19C /* SpecialCharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterView.swift; sourceTree = "<group>"; };
+		AE2AC29C2DF2061200F7A19C /* SpecialCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialCharacterViewController.swift; sourceTree = "<group>"; };
 		E108F6D3D6F254C7172514EE /* Pods-RickAndMorty.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickAndMorty.release.xcconfig"; path = "Target Support Files/Pods-RickAndMorty/Pods-RickAndMorty.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +152,7 @@
 		AE2AC2042DEEFAA100F7A19C /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				AE2AC2962DF1E21D00F7A19C /* GoogleService-Info.plist */,
 				AE2AC2052DEEFAA100F7A19C /* AppDelegate.swift */,
 				AE2AC2072DEEFAA100F7A19C /* SceneDelegate.swift */,
 				AE2AC2092DEEFAA100F7A19C /* ViewController.swift */,
@@ -155,6 +180,7 @@
 		AE2AC21B2DEEFACE00F7A19C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				AE2AC28A2DF1DB7700F7A19C /* HomeView */,
 				AE2AC22B2DEF0BF000F7A19C /* Settings */,
 				AE2AC22A2DEF0BEA00F7A19C /* Episodes */,
 				AE2AC2292DEF0BE600F7A19C /* Locations */,
@@ -192,6 +218,7 @@
 			children = (
 				AE2AC2612DEF1D2A00F7A19C /* UserDefaults.swift */,
 				AE2AC2632DEF1D3B00F7A19C /* NetworkServices */,
+				AE2AC2982DF2022800F7A19C /* RemoteConfigService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -253,6 +280,10 @@
 		AE2AC22C2DEF0BF600F7A19C /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AE2AC27E2DEF3A9E00F7A19C /* Info.swift */,
+				AE2AC2802DEF3A9E00F7A19C /* Location.swift */,
+				AE2AC2822DEF3A9E00F7A19C /* Origin.swift */,
+				AE2AC27F2DEF3A9E00F7A19C /* Characters.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,6 +294,7 @@
 				AE2AC2302DEF0C0C00F7A19C /* Cell */,
 				AE2AC22F2DEF0C0600F7A19C /* Controller */,
 				AE2AC2592DEF0EE000F7A19C /* CharactersView.swift */,
+				AE2AC29A2DF205F600F7A19C /* SpecialCharacterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -270,6 +302,7 @@
 		AE2AC22E2DEF0C0100F7A19C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				AE2AC2882DEF3D4C00F7A19C /* CharactersViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -278,6 +311,7 @@
 			isa = PBXGroup;
 			children = (
 				AE2AC25B2DEF0EF000F7A19C /* CharactersViewController.swift */,
+				AE2AC29C2DF2061200F7A19C /* SpecialCharacterViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -412,6 +446,7 @@
 			children = (
 				AE2AC2642DEF1D5D00F7A19C /* NetworkServices.swift */,
 				AE2AC2662DEF1D7100F7A19C /* BaseRouter.swift */,
+				AE2AC27A2DEF37A400F7A19C /* CharacterRouter.swift */,
 				AE2AC2682DEF1D7D00F7A19C /* NetworkComponents */,
 			);
 			path = NetworkServices;
@@ -436,6 +471,55 @@
 				AE2AC2742DEF1E2600F7A19C /* FailureModel.swift */,
 			);
 			path = FailureModel;
+			sourceTree = "<group>";
+		};
+		AE2AC28A2DF1DB7700F7A19C /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				AE2AC28D2DF1DB8A00F7A19C /* ViewModel */,
+				AE2AC28C2DF1DB8700F7A19C /* View */,
+				AE2AC28B2DF1DB8400F7A19C /* Model */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		AE2AC28B2DF1DB8400F7A19C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE2AC2942DF1DF0000F7A19C /* HomeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE2AC28C2DF1DB8700F7A19C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE2AC2912DF1DBAF00F7A19C /* Cell */,
+				AE2AC28E2DF1DB9000F7A19C /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE2AC28D2DF1DB8A00F7A19C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		AE2AC28E2DF1DB9000F7A19C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE2AC2922DF1DBCA00F7A19C /* HomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE2AC2912DF1DBAF00F7A19C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		AEAA3A6A1ED9CF68C7B18A7D /* Pods */ = {
@@ -510,6 +594,7 @@
 			files = (
 				AE2AC20F2DEEFAA400F7A19C /* Assets.xcassets in Resources */,
 				AE2AC2122DEEFAA400F7A19C /* Base in Resources */,
+				AE2AC2972DF1E21D00F7A19C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,13 +670,17 @@
 				AE2AC26C2DEF1DBA00F7A19C /* StatusCode.swift in Sources */,
 				AE2AC24E2DEF0E6100F7A19C /* EpisodesView.swift in Sources */,
 				AE2AC20A2DEEFAA100F7A19C /* ViewController.swift in Sources */,
+				AE2AC2872DEF3A9E00F7A19C /* Origin.swift in Sources */,
 				AE2AC2462DEF0D9E00F7A19C /* SettingsCoordinator.swift in Sources */,
 				AE2AC2562DEF0EB100F7A19C /* LocationsViewController.swift in Sources */,
+				AE2AC29B2DF205F600F7A19C /* SpecialCharacterView.swift in Sources */,
 				AE2AC2442DEF0C6F00F7A19C /* MainCoordinator.swift in Sources */,
 				AE2AC2242DEF0A8200F7A19C /* TabBarController.swift in Sources */,
 				AE2AC2582DEF0ECC00F7A19C /* CharactersCoordinator.swift in Sources */,
 				AE2AC2672DEF1D7100F7A19C /* BaseRouter.swift in Sources */,
 				AE2AC2412DEF0C5F00F7A19C /* Coordinator.swift in Sources */,
+				AE2AC2932DF1DBCA00F7A19C /* HomeViewController.swift in Sources */,
+				AE2AC27B2DEF37A400F7A19C /* CharacterRouter.swift in Sources */,
 				AE2AC24A2DEF0E2900F7A19C /* SettingsView.swift in Sources */,
 				AE2AC2272DEF0BBF00F7A19C /* R.generated.swift in Sources */,
 				AE2AC24C2DEF0E3F00F7A19C /* EpisodesCoordinator.swift in Sources */,
@@ -603,17 +692,24 @@
 				AE2AC2622DEF1D2A00F7A19C /* UserDefaults.swift in Sources */,
 				AE2AC26E2DEF1DCB00F7A19C /* NetworkErrors.swift in Sources */,
 				AE2AC2792DEF227700F7A19C /* Extension + CollectionView.swift in Sources */,
+				AE2AC2852DEF3A9E00F7A19C /* Location.swift in Sources */,
+				AE2AC2992DF2022900F7A19C /* RemoteConfigService.swift in Sources */,
 				AE2AC25C2DEF0EF000F7A19C /* CharactersViewController.swift in Sources */,
 				AE2AC25A2DEF0EE000F7A19C /* CharactersView.swift in Sources */,
+				AE2AC2842DEF3A9E00F7A19C /* Characters.swift in Sources */,
+				AE2AC2952DF1DF0000F7A19C /* HomeModel.swift in Sources */,
 				AE2AC2702DEF1DDB00F7A19C /* HttpHeader.swift in Sources */,
+				AE2AC2892DEF3D4C00F7A19C /* CharactersViewModel.swift in Sources */,
 				AE2AC2542DEF0EA200F7A19C /* LocationsView.swift in Sources */,
 				AE2AC2502DEF0E7000F7A19C /* EpisodesViewController.swift in Sources */,
 				AE2AC2752DEF1E2600F7A19C /* FailureModel.swift in Sources */,
 				AE2AC25E2DEF100F00F7A19C /* TabBarCoordinator.swift in Sources */,
 				AE2AC26A2DEF1D8F00F7A19C /* ProResult.swift in Sources */,
 				AE2AC2482DEF0E0900F7A19C /* SettingsViewController.swift in Sources */,
+				AE2AC29D2DF2061200F7A19C /* SpecialCharacterViewController.swift in Sources */,
 				AE2AC2602DEF119000F7A19C /* Extension + UIView.swift in Sources */,
 				AE2AC2652DEF1D5D00F7A19C /* NetworkServices.swift in Sources */,
+				AE2AC2832DEF3A9E00F7A19C /* Info.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

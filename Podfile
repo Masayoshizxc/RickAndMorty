@@ -10,5 +10,8 @@ target 'RickAndMorty' do
 pod 'SnapKit'
 pod 'R.swift'
 pod 'Alamofire'
+pod 'Kingfisher'
+pod 'Firebase/Core'
+pod 'Firebase/RemoteConfig'
 
 end

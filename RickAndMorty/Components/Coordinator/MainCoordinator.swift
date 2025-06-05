@@ -25,5 +25,11 @@ class MainCoordinator: Coordinator {
         child.start()
     }
     
+    func web(link: String) {
+        let vc = HomeViewController(link: link)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: false)
+    }
+    
     
 }

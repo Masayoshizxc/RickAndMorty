@@ -25,4 +25,10 @@ class CharactersCoordinator: Coordinator {
         navigationController.pushViewController(vc, animated: true)
     }
     
+    func character(model: SpecialCharacter) {
+        let vc = SpecialCharacterViewController(model: model)
+        vc.coordinator = self
+        navigationController.pushViewController(vc, animated: true)
+    }
+    
 }

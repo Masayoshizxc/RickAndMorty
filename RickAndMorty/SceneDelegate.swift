@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseRemoteConfig
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,9 +23,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let nav = UINavigationController()
         coordinator = MainCoordinator(navigationController: nav)
         coordinator?.start()
+        
         window.rootViewController = nav
         window.makeKeyAndVisible()
         self.window = window
+        
+        decideInitialFlow()
+
+    }
+    
+    private func decideInitialFlow() {
+        let userDefaults = UserDefaultsService.shared
+        if let savedLink = userDefaults.getSavedLink() {
+            coordinator?.web(link: savedLink)
+            return
+        }
+        
+        RemoteConfigService.shared.fetchRemoteConfig { [weak self] model in
+            DispatchQueue.main.async {
+                guard let model = model else {
+                    self?.coordinator?.start()
+                    return
+                }
+                
+                if model.needForceUpdate ?? false {
+                    userDefaults.saveRedirectLink(link: model.redirectLink ?? "")
+                    self?.coordinator?.web(link: model.redirectLink ?? "")
+                } else {
+                    self?.coordinator?.start()
+                }
+            }
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
