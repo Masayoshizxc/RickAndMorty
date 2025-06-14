@@ -55,3 +55,5 @@ This application demonstrates proficiency in iOS development using contemporary 
 ---
 
 *This project showcases modern iOS development practices and architectural expertise suitable for production-level applications.*
+
+![Image](https://github.com/user-attachments/assets/1e734e74-29a1-4ac7-a07c-22217429dd39)
